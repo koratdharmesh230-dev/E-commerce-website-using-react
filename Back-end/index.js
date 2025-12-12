@@ -1,7 +1,8 @@
 import express from 'express';
 import cors from 'cors';
 import db from './models/index.js';
-import userRouters from './routes/users.js'
+import userRouters from './routes/users.js';
+import productsRouter from './routes/products.js';
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -13,6 +14,7 @@ app.use(cors());
 
 // Routes 
 app.use('/auth', userRouters);
+app.use('/products', productsRouter);
 
 // Test Route
 app.get('/', (req, res) => {
