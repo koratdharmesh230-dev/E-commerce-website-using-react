@@ -1,0 +1,33 @@
+/* 1. THE RESET: Removes default spacing browsers add */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Makes sizing elements much easier */
+}
+
+/* 2. VARIABLES: Your Design System */
+
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #1e293b; /* Dark slate for footer/text */
+    --background-color: #f8fafc; /* Very light grey for background */
+    --text-color: #334155;
+    --white: #ffffff;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}

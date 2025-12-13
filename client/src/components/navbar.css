@@ -1,0 +1,46 @@
+.navbar{
+    background-color: var(--secondary-color);
+    height: 80px;
+    display: flex;
+    justify-content: center; /* Centers the container */
+    align-items: center; /* Vertically centers items */
+    position: sticky; /* Keeps navbar at top when scrolling */
+    top: 0;
+    z-index: 999;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between; /* Pushes Logo to left, Links to right */
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Prevents it from getting too wide on huge screens */
+  padding: 0 20px;
+}
+
+.navbar-logo {
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-menu {
+  display: flex; /* Makes list items sit side-by-side */
+  gap: 20px; /* Space between links */
+}
+
+.nav-link {
+  color: var(--white);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+.cart-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
