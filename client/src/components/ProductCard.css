@@ -1,0 +1,48 @@
+.product-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
+  transition: transform 0.2s ease;
+  overflow: hidden; /* Keeps image inside rounded corners */
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  transform: translateY(-5px); /* Moves up slightly when hovered */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Ensures image covers the box without stretching */
+  background-color: #ddd;
+}
+
+.product-info {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.price {
+  font-weight: bold;
+  color: var(--primary-color);
+  font-size: 1.1rem;
+}
+
+.view-btn {
+  display: block;
+  text-align: center;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: auto; /* Pushes button to the bottom */
+}
+
+.view-btn:hover {
+  background-color: var(--primary-color);
+}
